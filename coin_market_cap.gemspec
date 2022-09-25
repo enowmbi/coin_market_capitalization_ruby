@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/coint_market_cap/version"
+require_relative "lib/coin_market_cap/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "coint_market_cap"
-  spec.version = CointMarketCap::VERSION
+  spec.name = "coin_market_cap"
+  spec.version = CoinMarketCap::VERSION
   spec.authors = ["Enow Mbi"]
   spec.email = ["benowmbi@yahoo.com"]
 

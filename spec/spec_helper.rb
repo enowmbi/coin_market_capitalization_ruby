@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "coint_market_cap"
+require "coin_market_cap"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
