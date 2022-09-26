@@ -3,49 +3,49 @@
 module CoinMarketCap
   # BadRequestException
   class BadRequestException < StandardError
-    def initialize(status_json)
+    def initialize(json)
       super
-      puts status_json["error_message"]
+      puts json["status"]["error_message"]
     end
   end
 
   # UnauthorizedException
   class UnauthorizedException < StandardError
-    def initialize(status_json)
+    def initialize(json)
       super
-      puts status_json["error_message"]
+      puts json["status"]["error_message"]
     end
   end
 
   # PaymentRequiredException
   class PaymentRequiredException < StandardError
-    def initialize(status_json)
+    def initialize(json)
       super
-      puts status_json["error_message"]
+      puts json["status"]["error_message"]
     end
   end
 
   # ForbiddenException
   class ForbiddenException < StandardError
-    def initialize(status_json)
+    def initialize(json)
       super
-      puts status_json["error_message"]
+      puts json["status"]["error_message"]
     end
   end
 
   # TooManyRequestsException
   class TooManayRequestsException < StandardError
-    def initialize(status_json)
+    def initialize(json)
       super
-      puts status_json["error_message"]
+      puts json["status"]["error_message"]
     end
   end
 
   # InternalServerError
-  class InternalServerException < StandardError
-    def initialize(status_json)
+  class ServerException < StandardError
+    def initialize(json)
       super
-      puts status_json["error_message"]
+      puts json["status"]["error_message"]
     end
   end
 end
