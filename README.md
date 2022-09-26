@@ -1,3 +1,7 @@
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide)
+[![Ruby on Rails CI](https://github.com/enowmbi/coin_market_cap_ruby/actions/workflows/ruby.yml/badge.svg)](https://github.com/enowmbi/coin_market_cap_ruby/actions/workflows/ruby.yml)
+
 # CoinMarketCap
 Ruby client library for accessing Coin Market Cap API.
 
