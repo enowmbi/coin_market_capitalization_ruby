@@ -7,12 +7,18 @@ module CoinMarketCap
   # Cryptocurrency
   class Cryptocurrency
     BASE_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency"
-    SIMPLE_END_POINTS = %w[
+
+    END_POINTS = %w[
       map
       categories
       category
       airdrops
       airdrop
+      listings/latest
+      listings/historical
+      trending/latest
+      trending/most-visited
+      trending/gainers-losers
     ].freeze
 
     attr_reader :api_key, :adapter
@@ -31,37 +37,11 @@ module CoinMarketCap
       end
     end
 
-    SIMPLE_END_POINTS.each do |simple_end_point|
-      define_method(simple_end_point.to_sym) do |**args|
-        end_point = simple_end_point
+    END_POINTS.each do |end_point|
+      define_method(end_point.tr("/,-", "_").to_sym) do |**args|
         make_request(end_point, **args)
       end
     end
-
-    # def map(**args)
-    #   endpoint = "map"
-    #   make_request(endpoint, **args)
-    # end
-
-    # def categories(**args)
-    #   endpoint = "categories"
-    #   make_request(endpoint, **args)
-    # end
-
-    # def category(**args)
-    #   endpoint = "category"
-    #   make_request(endpoint, **args)
-    # end
-
-    # def airdrops(**args)
-    #   endpoint = "airdrops"
-    #   make_request(endpoint, **args)
-    # end
-
-    # def airdrop(**args)
-    #   endpoint = "airdrop"
-    #   make_request(endpoint, **args)
-    # end
 
     private
 
