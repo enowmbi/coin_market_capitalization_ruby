@@ -29,6 +29,11 @@ module CoinMarketCap
       make_request(endpoint, **args)
     end
 
+    def categories(**args)
+      endpoint = "categories"
+      make_request(endpoint, **args)
+    end
+
     private
 
     def make_request(endpoint, **query_params)
