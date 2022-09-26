@@ -39,6 +39,16 @@ module CoinMarketCap
       make_request(endpoint, **args)
     end
 
+    def airdrops(**args)
+      endpoint = "airdrops"
+      make_request(endpoint, **args)
+    end
+
+    def airdrop(**args)
+      endpoint = "airdrop"
+      make_request(endpoint, **args)
+    end
+
     private
 
     def make_request(endpoint, **query_params)
