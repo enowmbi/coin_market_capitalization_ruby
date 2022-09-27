@@ -4,6 +4,7 @@ require_relative "coin_market_cap/version"
 
 # CoinMarketCap
 module CoinMarketCap
+  autoload(:Base, "coin_market_cap/base")
   autoload(:Cryptocurrency, "coin_market_cap/cryptocurrency")
   autoload(:BadRequestException, "coin_market_cap/exceptions")
   autoload(:UnauthorizedException, "coin_market_cap/exceptions")
