@@ -24,7 +24,7 @@ module CoinMarketCap
     end
 
     END_POINT_ENTRIES.each do |end_point|
-      define_method(end_point.tr("/,-", "_").to_sym) do |**args|
+      define_method(end_point.tr("/-", "_").to_sym) do |**args|
         make_request(end_point, **args)
       end
     end
