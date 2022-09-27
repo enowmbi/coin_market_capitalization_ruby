@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 module CoinMarketCap
-  # Cryptocurrency
+  # Cryptocurrency class contains methods mapped to API endpoints for cryptocurrencies.
+  # This category currently includes 10 endpoints
   class Cryptocurrency < Base
     BASE_URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency"
 
