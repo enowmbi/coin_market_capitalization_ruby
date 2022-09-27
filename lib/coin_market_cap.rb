@@ -10,6 +10,7 @@ module CoinMarketCap
   autoload(:Exchange, "coin_market_cap/exchange")
   autoload(:GlobalMetrics, "coin_market_cap/global_metrics")
   autoload(:Blockchain, "coin_market_cap/blockchain")
+  autoload(:Content, "coin_market_cap/content")
   autoload(:BadRequestException, "coin_market_cap/exceptions")
   autoload(:UnauthorizedException, "coin_market_cap/exceptions")
   autoload(:PaymentRequiredException, "coin_market_cap/exceptions")
