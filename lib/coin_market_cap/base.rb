@@ -31,7 +31,7 @@ module CoinMarketCap
       end
 
       if response.status == 200
-        resonse.body
+        response.body
       else
         raise_exception(response)
       end
