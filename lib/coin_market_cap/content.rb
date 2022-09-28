@@ -12,7 +12,7 @@ module CoinMarketCap
       posts/comments
     ].freeze
 
-    def initialize(api_key, base_url: BASE_URL, adapter: Faraday.default_adapter)
+    def initialize(api_key:, base_url: BASE_URL, adapter: Faraday.default_adapter)
       super
     end
 
