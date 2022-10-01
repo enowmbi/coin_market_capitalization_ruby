@@ -39,18 +39,12 @@ module CoinMarketCap
 
     def raise_exception(response)
       case response.status
-      when 400
-        raise BadRequestException, response.body
-      when 401
-        raise UnauthorizedException, response.body
-      when 402
-        raise PaymentRequiredException, response.body
-      when 403
-        raise ForbiddenException, response.body
-      when 429
-        raise TooManyRequestsException, response.body
-      when 500
-        raise ServerException, response.body
+      when 400 then raise BadRequestException, response.body
+      when 401 then raise UnauthorizedException, response.body
+      when 402 then raise PaymentRequiredException, response.body
+      when 403 then raise ForbiddenException, response.body
+      when 429 then raise TooManyRequestsException, response.body
+      when 500 then raise ServerException, response.body
       end
     end
   end
