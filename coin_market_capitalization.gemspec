@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require_relative "lib/coin_market_cap/version"
+require_relative "lib/coin_market_capitalization/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "coin_market_cap"
-  spec.version = CoinMarketCap::VERSION
+  spec.name = "coin_market_capitalization"
+  spec.version = CoinMarketCapitalization::VERSION
   spec.authors = ["Enow Mbi"]
   spec.email = ["benowmbi@yahoo.com"]
 
   spec.summary = "Get todays's crptocurrencies by market cap using Ruby"
   spec.description = spec.summary
-  spec.homepage = "https://github.com/enowmbi/coin_market_cap_ruby"
+  spec.homepage = "https://github.com/enowmbi/coin_market_capitalization_ruby"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 

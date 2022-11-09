@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CoinMarketCap
+module CoinMarketCapitalization
   # Blockchain class - contains methods that map to API endpoints for blockchain data.
   # This category currently includes 1 endpoint
   class Blockchain < Base

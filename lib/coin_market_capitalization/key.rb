@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CoinMarketCap
+module CoinMarketCapitalization
   # Key class - contains methods that map to API endpoints for managing your API key.
   # This category currently includes 1 endpoint
   class Key < Base

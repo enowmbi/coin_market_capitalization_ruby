@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CoinMarketCap
+module CoinMarketCapitalization
   # Fiat class contains methods mapped to corresponding API endpoints for fiat currencies.
   # This category currently includes 1 endpoint
   class Fiat < Base

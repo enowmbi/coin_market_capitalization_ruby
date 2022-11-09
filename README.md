@@ -1,6 +1,6 @@
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide)
-[![Ruby on Rails CI](https://github.com/enowmbi/coin_market_cap_ruby/actions/workflows/ruby.yml/badge.svg)](https://github.com/enowmbi/coin_market_cap_ruby/actions/workflows/ruby.yml)
+[![Ruby on Rails CI](https://github.com/enowmbi/coin_market_capitalization_ruby/actions/workflows/ruby.yml/badge.svg)](https://github.com/enowmbi/coin_market_capitalization_ruby/actions/workflows/ruby.yml)
 
 # CoinMarketCap
 Ruby client library for accessing Coin Market Cap API.
@@ -9,11 +9,11 @@ Ruby client library for accessing Coin Market Cap API.
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add coin_market_cap
+    $ bundle add coin_market_capitalization
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install coin_market_cap
+    $ gem install coin_market_capitalization
 
 ## Usage
 
@@ -27,7 +27,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/enowmbi/coin_market_cap. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/coin_market_cap/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/enowmbi/coin_market_capitalization. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/coin_market_capitalization/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -35,4 +35,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the coinMarketCap project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/coin_market_cap/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the coinMarketCapitalization project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/coin_market_capitalization/blob/master/CODE_OF_CONDUCT.md).

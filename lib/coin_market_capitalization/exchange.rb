@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CoinMarketCap
+module CoinMarketCapitalization
   # Exchange class - contains methods mapped to API endpoints for cryptocurrency exchanges.
   # This category currently includes 6 endpoints
   class Exchange < Base

@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in coint_market_cap.gemspec
+# Specify your gem's dependencies in coint_market_capitalization.gemspec
 gemspec
 
 gem "rake", "~> 13.0"

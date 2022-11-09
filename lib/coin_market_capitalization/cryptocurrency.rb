@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CoinMarketCap
+module CoinMarketCapitalization
   # Cryptocurrency class contains methods mapped to API endpoints for cryptocurrencies.
   # This category currently includes 10 endpoints
   class Cryptocurrency < Base

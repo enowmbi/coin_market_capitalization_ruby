@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module CoinMarketCap
+module CoinMarketCapitalization
   # BadRequestException
   class BadRequestException < StandardError
     def initialize(json)
