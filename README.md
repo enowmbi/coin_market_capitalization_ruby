@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/coin_market_capitalization.svg)](https://badge.fury.io/rb/coin_market_capitalization)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-community-brightgreen.svg)](https://rubystyle.guide)
 [![Ruby on Rails CI](https://github.com/enowmbi/coin_market_capitalization_ruby/actions/workflows/ruby.yml/badge.svg)](https://github.com/enowmbi/coin_market_capitalization_ruby/actions/workflows/ruby.yml)
