@@ -2,7 +2,7 @@
 
 require_relative "coin_market_capitalization/version"
 
-# CoinMarketCap - autoloads classes
+# CoinMarketCapitalization - autoload classes
 module CoinMarketCapitalization
   autoload(:Base, "coin_market_capitalization/base")
   autoload(:Cryptocurrency, "coin_market_capitalization/cryptocurrency")

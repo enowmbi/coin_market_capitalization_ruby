@@ -3,7 +3,7 @@
 require "faraday"
 require "faraday_middleware"
 
-module CoinMarketCap
+module CoinMarketCapitalization
   # Base class
   class Base
     attr_reader :api_key, :base_url, :adapter
