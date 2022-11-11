@@ -18,7 +18,9 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 ### Initialisation
-The "api_key", "base_url" and an "adapter" are parameters used in the initialisation method. There is a default base_url and adapter provided for each class so you don't need to specify it when you create an object.You can use a different base_url and/or adapter when calling the initialisation method.
+The "api_key", "base_url" and an "adapter" are parameters used in the initialisation method. 
+There is a default base_url and adapter provided for each class so you don't need to specify it when you create an object.
+You can use a different base_url and/or adapter when calling the initialisation method.
 ```ruby
 BASE_URL = "https://pro-api.coinmarketcap.com/v1/blockchain"
 
@@ -37,7 +39,8 @@ This class contains methods (representing endpoints) that return data around cry
 ```ruby
 cryptocurrency = CoinMarketCapitalization::Cryptocurrency.new(api_key: "PUT_YOUR_API_KEY_HERE")
 cryptocurrency.listings_latest
-# represents "/cryptocurrency/listings/latest" - Returns a paginated list of all active cryptocurrencies with latest market data.  
+# calls the "/cryptocurrency/listings/latest" endpoint
+# returns a paginated list of all active cryptocurrencies with latest market data.  
 ```
 
 ### 2. Exchange
@@ -47,7 +50,8 @@ This class has methods (representing endpoints) that return data around cryptocu
 ```ruby
 exchange = CoinMarketCapitalization::Exchange.new(api_key: "PUT_YOUR_API_KEY_HERE")
 exchange.quotes_latest
-# represents  "/exchange/quotes/latest" - Returns the latest aggregate market data for 1 or more exchanges.
+# calls the "/exchange/quotes/latest" endpoint
+# returns the latest aggregate market data for 1 or more exchanges.
 ```
 
 ### 3. GlobalMetrics
@@ -57,7 +61,8 @@ This class has methods (representing endpoints) that return aggregate market dat
 ```ruby
 global_metrics = CoinMarketCapitalization::GlobalMetrics.new(api_key: "PUT_YOUR_API_KEY_HERE")
 global_metrics.quotes_latest
-# represents  "/global-metrics/quotes/latest" - Returns the latest global cryptocurrency market metrics
+# calls the "/global-metrics/quotes/latest" endpoint
+# returns the latest global cryptocurrency market metrics
 ```
 
 ### 4. Blockchain
@@ -67,7 +72,8 @@ This class has methods (representing endpoints) that return data block explorer 
 ```ruby
 blockchain = CoinMarketCapitalization::Blockchain.new(api_key: "PUT_YOUR_API_KEY_HERE")
 blockchain.statistics_latest
-# represents "/blockchain/statistics/latest" - Returns the latest blockchain statistics data for 1 or more blockchains. Bitcoin, Litecoin, and Ethereum are currently supported. 
+# calls the "/blockchain/statistics/latest" endpoint
+# returns the latest blockchain statistics data for 1 or more blockchains. Bitcoin, Litecoin, and Ethereum are currently supported. 
 ```
 
 ### 5. Fiat
@@ -77,7 +83,8 @@ This class has methods (representing endpoints) that return data around fiats cu
 ```ruby
 fiat = CoinMarketCapitalization::Fiat.new(api_key: "PUT_YOUR_API_KEY_HERE")
 fiat.map
-# represents "/fiat/map" - Returns a mapping of all supported fiat currencies to unique CoinMarketCap ids 
+# calls the "/fiat/map" endpoint
+# returns a mapping of all supported fiat currencies to unique CoinMarketCap ids 
 ```
 
 ### 6. Content 
@@ -87,7 +94,8 @@ This class has methods (representing endpoints) that return cryptocurrency-relat
 ```ruby
 content = CoinMarketCapitalization::Content.new(api_key: "PUT_YOUR_API_KEY_HERE")
 content.latest
-# represents "/content/latest" - Returns a paginated list of content pulled from CMC News/Headlines and Alexandria articles. 
+# calls the "/content/latest" endpoint
+# returns a paginated list of content pulled from CMC News/Headlines and Alexandria articles. 
 ```
 
 ### 7. key
@@ -97,7 +105,8 @@ This class has methods (representing endpoints) for API key administration (to r
 ```ruby
 key = CoinMarketCapitalization::Key.new(api_key: "PUT_YOUR_API_KEY_HERE")
 key.info
-# represents "/key/info" - Returns API key details and usage stats.  
+# calls the "/key/info" endpoint
+# returns API key details and usage stats.  
 ```
 
 ## Development
